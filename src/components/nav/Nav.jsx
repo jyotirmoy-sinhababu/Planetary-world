@@ -13,7 +13,7 @@ const Nav = () => {
   console.log(searchInput);
   return (
     <div className='nav-cnt'>
-      <h1> Planetary World</h1>
+      <h1 className='nav-heading'> Planetary World</h1>
       <form
         className='search-bar'
         onSubmit={(e) => {

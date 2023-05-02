@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bruno+Ace+SC&display=swap');
+
 .nav-cnt {
   display: flex;
   height: 80px;
   justify-content: space-around;
   align-items: center;
   width: 100%;
+}
+
+.nav-heading {
+  font-family: 'Abril Fatface', cursive;
 }
