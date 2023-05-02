@@ -6,8 +6,10 @@
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  background-color: rgb(200, 176, 203);
 }
 
 .nav-heading {
   font-family: 'Abril Fatface', cursive;
+  color: rgb(57, 57, 88);
 }
