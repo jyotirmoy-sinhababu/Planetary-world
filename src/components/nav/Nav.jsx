@@ -1,5 +1,7 @@
 import React, { useContext } from 'react';
 
+import './nav.css';
+
 import { ApiDataContext } from '../dataProvider/DataProvider';
 
 const Nav = () => {
@@ -10,7 +12,7 @@ const Nav = () => {
   };
   console.log(searchInput);
   return (
-    <div>
+    <div className='nav-cnt'>
       <h1> Planetary World</h1>
       <form
         className='search-bar'

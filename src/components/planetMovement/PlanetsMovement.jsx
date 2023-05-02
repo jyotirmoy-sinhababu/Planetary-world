@@ -2,6 +2,8 @@ import React from 'react';
 
 import './planetsMovement.css';
 
+import imgone from '../../assests/imgone.jpg';
+
 const PlanetsMovement = () => {
   return (
     <div className='main-solar-system'>
@@ -25,10 +27,7 @@ const PlanetsMovement = () => {
             <div id='moon'></div>
           </div>
 
-          <img
-            id='earth'
-            src='https://raw.githubusercontent.com/everdimension-personal/codepen-assets/master/earth_small_150.jpg'
-          />
+          <img id='earth' src={imgone} />
         </div>
 
         <div class='orbit mars-orbit'></div>

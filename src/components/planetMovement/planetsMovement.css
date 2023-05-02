@@ -5,15 +5,10 @@
 
 .solar-system {
   position: relative;
-  width: 780px;
-  height: 750px;
+  width: 800px;
+  height: 706px;
   margin: auto;
   overflow: hidden;
-}
-
-/* Some positioning rules that are common for all objects */
-.orbit {
-  border: 1px dashed #666;
 }
 
 #sun,
@@ -40,13 +35,7 @@
   border-radius: 50%;
 }
 
-/* Individual objects rules. They are pretty much the same for 
-all objects and basically only vary in orbit size 
-and planet size. And colors :) */
-
 #sun {
-  /* Positions the top-left corner of the image to be *
-	/* in the middle of the box */
   height: 180px;
   width: 180px;
   background-color: #fae20a;
@@ -116,7 +105,6 @@ and planet size. And colors :) */
   height: 25px;
   width: 25px;
   background-color: #a65e22;
-  /* box-shadow: 0 0 34px #3a4385; */
 }
 
 .mercury-orbit,
@@ -147,8 +135,8 @@ and planet size. And colors :) */
 #jupiter {
   margin-top: -46px;
   margin-left: -26px;
-  height: 80px;
-  width: 80px;
+  height: 70px;
+  width: 70px;
   background-color: grey;
 }
 
