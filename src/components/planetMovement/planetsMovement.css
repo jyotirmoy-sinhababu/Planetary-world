@@ -10,12 +10,6 @@
   overflow: hidden;
 }
 
-/* #sun,
-.orbit,
-.orbit + div,
-.orbit + div > div {
-  position: absolute;
-} */
 #sun {
   position: absolute;
   top: 50%;
@@ -25,7 +19,6 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  border: 1px solid white;
 }
 .mercury-spin,
 .venus-spin,
@@ -37,16 +30,6 @@
   left: 50%;
 }
 
-/* #sun,
-.orbit,
-.orbit + div {
-  top: 50%;
-  left: 50%;
-} */
-/* .orbit + div > div {
-  top: 0;
-  left: 50%;
-} */
 .moon-orbit {
   top: 0;
   left: 50%;

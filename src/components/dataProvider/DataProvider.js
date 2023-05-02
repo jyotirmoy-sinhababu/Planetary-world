@@ -5,7 +5,7 @@ import { useState } from 'react';
 export const ApiDataContext = createContext();
 
 const ApiProvider = ({ children }) => {
-  const [planetaryData, setPlanetaryData] = useState();
+  const [planetaryData, setPlanetaryData] = useState({});
   const [searchInput, setSearchInput] = useState('');
 
   const fetchData = async () => {
