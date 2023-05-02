@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Nav from '../../components/nav/Nav';
+import DisplayArea from '../displayArea/DisplayArea';
 
 const Home = () => {
   return (
     <div>
-      <Nav />
+      <DisplayArea />
     </div>
   );
 };
