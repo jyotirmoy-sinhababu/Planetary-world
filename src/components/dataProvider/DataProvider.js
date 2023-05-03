@@ -7,6 +7,7 @@ export const ApiDataContext = createContext();
 const ApiProvider = ({ children }) => {
   const [planetaryData, setPlanetaryData] = useState([]);
   const [searchInput, setSearchInput] = useState('');
+  const [isActive, setIsActive] = useState(true);
 
   const fetchData = async () => {
     const options = {
@@ -36,7 +37,14 @@ const ApiProvider = ({ children }) => {
   };
   return (
     <ApiDataContext.Provider
-      value={{ searchInput, planetaryData, setSearchInput, fetchData }}
+      value={{
+        searchInput,
+        planetaryData,
+        setSearchInput,
+        fetchData,
+        isActive,
+        setIsActive,
+      }}
     >
       {children}
     </ApiDataContext.Provider>

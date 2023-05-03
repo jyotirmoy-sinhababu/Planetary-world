@@ -5,7 +5,8 @@ import './nav.css';
 import { ApiDataContext } from '../dataProvider/DataProvider';
 
 const Nav = () => {
-  const { setSearchInput, fetchData, searchInput } = useContext(ApiDataContext);
+  const { setSearchInput, fetchData, searchInput, setIsActive } =
+    useContext(ApiDataContext);
 
   const handleChange = (e) => {
     setSearchInput({ ...searchInput, [e.target.name]: e.target.value });
@@ -18,6 +19,7 @@ const Nav = () => {
         onSubmit={(e) => {
           e.preventDefault();
           fetchData();
+          setIsActive(false);
         }}
       >
         <input

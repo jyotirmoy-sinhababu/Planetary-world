@@ -6,14 +6,51 @@
   color: aliceblue;
 }
 
-.display-data-cnt {
+.display-main-information-cnt {
   position: absolute;
   top: 15%;
   left: 33%;
+  z-index: 3;
 }
 
 .display-information-cnt {
-  border: 2px solid red;
+  display: flex;
+  padding-top: 80px;
+  justify-content: center;
+  box-shadow: 0 0 84px orange;
   height: 500px;
   width: 500px;
+  border-radius: 9px;
+}
+
+.display-data-cnt {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.display-header-cnt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.data-hd {
+  color: rgb(22, 118, 118);
+}
+
+.title {
+  color: hwb(194 18% 34%);
+}
+
+.display-planet-fact-cnt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.data {
+  color: rgb(231, 132, 140);
 }
