@@ -54,3 +54,10 @@
 .data {
   color: rgb(231, 132, 140);
 }
+
+.display-comet-cnt {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  transform: rotate(-32deg);
+}

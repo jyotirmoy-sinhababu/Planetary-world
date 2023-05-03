@@ -6,10 +6,40 @@
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  background-color: rgb(200, 176, 203);
+  background-image: url('../../assests/galaxy.jpg');
 }
 
 .nav-heading {
   font-family: 'Abril Fatface', cursive;
   color: rgb(57, 57, 88);
+}
+
+.search-bar {
+  display: flex;
+}
+
+.submit-btn {
+  width: 49px;
+  height: 47px;
+  background-image: url('../../assests/galaxy.jpg');
+  border: none;
+  background-color: rgb(57, 92, 104);
+}
+.submit-btn :hover {
+  box-shadow: 0 0 84px blue;
+}
+.bi-globe-central-south-asia:hover {
+  background-color: aqua;
+  border-radius: 50%;
+}
+
+.search-field {
+  width: 205px;
+  padding-left: 5px;
+  font-size: 18px;
+  height: 47px;
+  border-radius: 7px;
+}
+.search-field:hover {
+  box-shadow: 0 0 14px rgb(255, 196, 0);
 }
