@@ -1,7 +1,19 @@
-.planet-cnt {
+.display-main-cnt {
+  position: relative;
 }
+
+.data {
+  color: aliceblue;
+}
+
+.display-data-cnt {
+  position: absolute;
+  top: 15%;
+  left: 33%;
+}
+
 .display-information-cnt {
   border: 2px solid red;
   height: 500px;
-  width: 400px;
+  width: 500px;
 }
