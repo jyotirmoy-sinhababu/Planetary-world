@@ -8,18 +8,31 @@ import PlanetsMovement from '../../components/planetMovement/PlanetsMovement';
 
 const DisplayArea = () => {
   const { planetaryData } = useContext(ApiDataContext);
-  console.log(planetaryData.name);
+  {
+    planetaryData.length
+      ? console.log(planetaryData[0].name)
+      : console.log('not found');
+  }
+
   return (
-    <div>
+    <div className='display-main-cnt'>
       <div>
-        <div>
-          <div>
-            {planetaryData && (
-              <h1 style={{ color: 'white' }}>{planetaryData.name}</h1>
-            )}
+        {' '}
+        {planetaryData.length ? (
+          <div className='display-information-cnt'>
+            <div>
+              <div>
+                <h1>{planetaryData[0].name}</h1>
+              </div>
+            </div>
           </div>
-        </div>
+        ) : (
+          <div>
+            <h1>No data found</h1>
+          </div>
+        )}
       </div>
+
       <div className='planet-cnt'>
         <PlanetsMovement />
       </div>

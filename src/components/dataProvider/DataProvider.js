@@ -5,7 +5,7 @@ import { useState } from 'react';
 export const ApiDataContext = createContext();
 
 const ApiProvider = ({ children }) => {
-  const [planetaryData, setPlanetaryData] = useState({});
+  const [planetaryData, setPlanetaryData] = useState([]);
   const [searchInput, setSearchInput] = useState('');
 
   const fetchData = async () => {
@@ -21,9 +21,14 @@ const ApiProvider = ({ children }) => {
 
     try {
       await axios.request(options).then((res) => {
-        setPlanetaryData(res.data);
-        console.log('called');
-        console.log(res.data);
+        if (res.status == 200) {
+          setPlanetaryData(res.data);
+          console.log('called');
+          console.log(res);
+        } else {
+          setPlanetaryData('No data found');
+          console.log(planetaryData);
+        }
       });
     } catch (err) {
       console.log('error');
