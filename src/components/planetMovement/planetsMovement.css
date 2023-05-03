@@ -29,6 +29,9 @@
   top: 50%;
   left: 50%;
 }
+.revolve {
+  border: 1px solid red;
+}
 
 .moon-orbit {
   top: 0;
