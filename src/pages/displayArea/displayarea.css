@@ -55,9 +55,27 @@
   color: rgb(231, 132, 140);
 }
 
-.display-comet-cnt {
+.starbody-cnt {
+  height: 500px;
+  width: 500px;
+  display: flex;
   position: absolute;
-  top: 5%;
-  left: 10%;
-  transform: rotate(-32deg);
+  left: 40%;
+  top: 10%;
+  border: 1px solid red;
+}
+
+.starbody-sub-one-cnt {
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 90%;
+  left: 5%;
+}
+.starbody-sub-two-cnt {
+  background-color: rgb(86, 103, 216);
+  border-radius: 50%;
+  position: absolute;
+  top: 30%;
+  left: 90%;
 }

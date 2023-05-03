@@ -5,7 +5,7 @@ import './displayarea.css';
 import { ApiDataContext } from '../../components/dataProvider/DataProvider';
 
 import PlanetsMovement from '../../components/planetMovement/PlanetsMovement';
-import Comet from '../../components/spaceObjects/Comet';
+import StarBody from '../../components/spaceObjects/StarBody';
 
 const DisplayArea = () => {
   const { planetaryData, isActive } = useContext(ApiDataContext);
@@ -58,8 +58,18 @@ const DisplayArea = () => {
           </div>
         ) : null}
       </div>
-      <div className='display-comet-cnt'>
-        <Comet />
+      <div className='starbody-cnt'>
+        <div className='starbody-sub-one-cnt'>
+          <StarBody />
+        </div>
+
+        <div className='starbody-sub-two-cnt'>
+          <StarBody />
+        </div>
+
+        <div className='starbody-sub-three-cnt'>
+          <StarBody />
+        </div>
       </div>
       <div className='display-planet-cnt'>
         <PlanetsMovement />
