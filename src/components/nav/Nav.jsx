@@ -14,6 +14,7 @@ const Nav = () => {
   return (
     <div className='nav-cnt'>
       <h1 className='nav-heading'> Planetary World</h1>
+
       <form
         className='search-bar'
         onSubmit={(e) => {

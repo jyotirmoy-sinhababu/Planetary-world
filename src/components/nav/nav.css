@@ -43,3 +43,9 @@
 .search-field:hover {
   box-shadow: 0 0 14px rgb(255, 196, 0);
 }
+
+.display-err-cnt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

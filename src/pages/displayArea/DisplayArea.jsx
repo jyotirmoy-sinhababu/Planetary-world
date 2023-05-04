@@ -54,7 +54,7 @@ const DisplayArea = () => {
           </div>
         ) : !isActive && planetaryData.length == 0 ? (
           <div className='display-err-cnt'>
-            <h1 className='display-err-msg'>No data found</h1>
+            <h1 className='display-err-msg'>Loading...</h1>
           </div>
         ) : null}
       </div>
