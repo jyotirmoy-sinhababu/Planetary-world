@@ -24,8 +24,6 @@ const ApiProvider = ({ children }) => {
       await axios.request(options).then((res) => {
         if (res.status == 200) {
           setPlanetaryData(res.data);
-          console.log('called');
-          console.log(res);
         } else {
           setPlanetaryData('No data found');
           console.log(planetaryData);

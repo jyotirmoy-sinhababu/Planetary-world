@@ -9,11 +9,6 @@ import StarBody from '../../components/spaceObjects/StarBody';
 
 const DisplayArea = () => {
   const { planetaryData, isActive } = useContext(ApiDataContext);
-  {
-    planetaryData.length
-      ? console.log(planetaryData[0].name)
-      : console.log('not found');
-  }
 
   return (
     <div className='display-main-cnt'>
@@ -38,7 +33,7 @@ const DisplayArea = () => {
                 </p>
                 <p className='data'>
                   {' '}
-                  <strong className='title'>Mass: </strong>{' '}
+                  <strong className='title'>Mass: </strong>
                   {planetaryData[0].mass} jupiter
                 </p>
                 <p className='data'>
